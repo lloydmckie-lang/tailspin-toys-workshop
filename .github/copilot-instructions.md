@@ -86,3 +86,7 @@ This is a crowdfunding platform for games with a developer theme. The applicatio
 - `scripts/`: Development and deployment scripts
 - `data/`: Database files
 - `README.md`: Project documentation
+
+
+- Every function should have docstrings or the language equivalent.
+- Before imports or any code, add a comment block to the file that explains its purpose.
