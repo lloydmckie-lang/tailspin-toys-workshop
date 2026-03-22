@@ -1,4 +1,4 @@
-# Tailspin Toys
+# [Tailspin Toys](https://copilot-dev-days.github.io/tailspin-toys-workshop/step.html?step=08-review)
 
 This repository contains the project for a guided workshop to explore GitHub Copilot CLI. The project is a website for a fictional game crowd-funding company, with a [Flask](https://flask.palletsprojects.com/en/stable/) backend using [SQLAlchemy](https://www.sqlalchemy.org/) and [Astro](https://astro.build/) frontend using [Svelte](https://svelte.dev/) for dynamic pages.
 
@@ -21,6 +21,16 @@ A script file has been created to launch the site. You can run it by:
 ```
 
 Then navigate to the [website](http://localhost:4321) to see the site!
+
+## API Endpoints
+
+The Flask backend runs on port `5100` and exposes the following endpoints:
+
+| Method | Path | Description |
+|--------|------|-------------|
+| GET | `/health` | Liveness probe for OpenTelemetry collectors |
+| GET | `/api/games` | List all games |
+| GET | `/api/games/<id>` | Get a single game by ID |
 
 ## License 
 
